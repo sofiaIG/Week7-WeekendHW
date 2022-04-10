@@ -1,10 +1,10 @@
 import React from "react";
 import FilmListItem from "./FilmListItems";
 
-const FilmList =({films, onClickFilm})=>{
+const FilmList =({films})=>{
 
     const filmItems = films.map((film, index) => {
-        return <FilmListItem film={film} key={index} onClickFilm ={onClickFilm} />
+        return <FilmListItem film={film} key={index} />
       })
 
     return(
